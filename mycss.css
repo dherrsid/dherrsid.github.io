@@ -5,13 +5,83 @@
 }
 
 img {
-  border: 4px solid #352510;
+  border: 4px solid rgb(55, 38, 16);
   border-radius: 30% 0 30% 0;
+}
+
+.display-4 {
+  font-family: "Playfair Display", serif;
+}
+.lead {
+  font-family: "Cutive Mono", monospace;
+  font-size: 25px;
 }
 
 #project {
   background-color: #554025;
   color: white;
+}
+
+.card {
+  border: 3px rgb(55, 38, 16) solid;
+  background-color: rgb(55, 38, 16);
+  color: white;
+  position: relative;
+}
+
+.card .button {
+  width: 200px;
+  position: relative;
+  bottom: 5px;
+  left: 61%;
+  transform: translate(-50%, 0);
+}
+
+.card .button a:hover {
+  background-color: #554025;
+  color: white;
+  transition: 1s;
+}
+
+.card-body::before {
+  position: absolute;
+  z-index: 1;
+  content: "Arahkan kursor pada text ini untuk menampilkan detail";
+  color: white;
+  opacity: 1;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Macondo", cursive;
+  top: 70%;
+  font-size: 21px;
+  left: 15px;
+  transition: 0.3s;
+}
+.card-body:hover::before {
+  color: white;
+  opacity: 0;
+}
+
+.card-body:target::before {
+  color: white;
+  opacity: 0;
+}
+
+.card .card-body p {
+  position: relative;
+  opacity: 0;
+  transition: 1.2s;
+  z-index: 2;
+  padding-bottom: 20px;
+}
+
+.card .card-body p:hover {
+  opacity: 1;
+}
+
+.card .card-body p:target {
+  opacity: 1;
 }
 
 .footer {
@@ -31,4 +101,65 @@ img {
 
 section {
   padding-top: 8rem;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+  .card-body::before {
+    top: 75%;
+    font-size: 21px;
+    left: 15px;
+  }
+  .card .button {
+    width: 200px;
+    position: relative;
+    bottom: 5px;
+    left: 61%;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+  .card-body::before {
+    content: "Klik dan tahan untuk menampilkan detail";
+    top: 80%;
+    font-size: 17px;
+    left: 15%;
+  }
+  .card .button {
+    width: 200px;
+    position: relative;
+    bottom: 5px;
+    left: 63%;
+    transform: translate(-50%, 0);
+  }
+
+  .card .card-body p {
+    padding-bottom: 25px;
+    font-size: 13px;
+  }
+
+  .lead {
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* Mobilephone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 }
