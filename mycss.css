@@ -131,13 +131,13 @@ section {
   .card-body::before {
     content: "Klik text ini untuk menampilkan detail";
     top: 80%;
-    font-size: 20px;
-    left: 25%;
+    font-size: 25px;
+    left: 22%;
   }
   .card .button {
     width: 200px;
     bottom: 5px;
-    left: 70%;
+    left: 80%;
   }
 
   .card .card-body p {
