@@ -151,7 +151,7 @@ section {
 
   .lead {
     font-family: "Work Sans", sans-serif;
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
@@ -163,5 +163,15 @@ h2 {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+    .card-body::before {
+    top: 80%;
+    font-size: 25px;
+    left: 22%;
+  }
+  .card .button {
+    width: 200px;
+    bottom: 5px;
+    left: 75%;
   }
 }
