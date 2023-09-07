@@ -272,5 +272,13 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
   </body>
 </html>
