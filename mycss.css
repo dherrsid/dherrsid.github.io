@@ -129,17 +129,15 @@ section {
     font-size: 70%;
   }
   .card-body::before {
-    content: "Klik dan tahan untuk menampilkan detail";
+    content: "Klik text ini untuk menampilkan detail";
     top: 80%;
-    font-size: 17px;
-    left: 15%;
+    font-size: 15px;
+    left: 25%;
   }
   .card .button {
     width: 200px;
-    position: relative;
     bottom: 5px;
-    left: 63%;
-    transform: translate(-50%, 0);
+    left: 65%;
   }
 
   .card .card-body p {
@@ -147,14 +145,18 @@ section {
     font-size: 13px;
   }
 
+  .display-4 {
+    font-size: 25px;
+  }
+
   .lead {
     font-family: "Work Sans", sans-serif;
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 22px;
 }
 
 /* Mobilephone */
