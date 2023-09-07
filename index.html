@@ -10,9 +10,6 @@
     <!--icon bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!--my CSS-->
     <link rel="stylesheet" href="mycss.css" />
   </head>
@@ -114,13 +111,20 @@
               <div class="card-body">
                 <p class="card-text">Project saya saat ini yang sedang saya kerjakan adalah pembuatan situs dan forum untuk bisnis.</p>
               </div>
+              <div class="button">
+                <a href="https://seewatchid.github.io/" class="btn btn-light" target="_blank">Lihat Project</a>
+              </div>
             </div>
           </div>
           <div class="col-md-4 mb-3 mt-2">
             <div class="card" data-aos="flip-up" data-aos-delay="400">
               <img src="img/project/2.jpg" class="card-img-top" alt="pic2" />
               <div class="card-body">
+                <div class="textfront"></div>
                 <p class="card-text">Selain bahasa pemrograman saya juga mempunyai skill dalam pembuatan PC dan server. <br /></p>
+              </div>
+              <div class="button">
+                <a href="https://seewatchid.github.io/" class="btn btn-light" target="_blank">Lihat Project</a>
               </div>
             </div>
           </div>
@@ -130,6 +134,9 @@
               <div class="card-body">
                 <p class="card-text">Saya juga sering aktif dalam pembuatan content dan vlog untuk edukasi terkait pengalaman dan pelajaran yang saya miliki.</p>
               </div>
+              <div class="button">
+                <a href="https://seewatchid.github.io/" class="btn btn-light" target="_blank">Lihat Project</a>
+              </div>
             </div>
           </div>
           <div class="col-md-4 mb-3 mt-2">
@@ -137,6 +144,9 @@
               <img src="img/project/4.jpg" class="card-img-top" alt="pic4" />
               <div class="card-body">
                 <p class="card-text">Selain itu saya pun ada project lain yang sedang saya jalani, yaitu project arduino.</p>
+              </div>
+              <div class="button">
+                <a href="https://seewatchid.github.io/" class="btn btn-light" target="_blank">Lihat Project</a>
               </div>
             </div>
           </div>
@@ -146,6 +156,9 @@
               <div class="card-body">
                 <p class="card-text">Adapun skill berkebun yang saya miliki dalam perawatan tanaman.</p>
               </div>
+              <div class="button">
+                <a href="https://seewatchid.github.io/" class="btn btn-light" target="_blank">Lihat Project</a>
+              </div>
             </div>
           </div>
           <div class="col-md-4 mb-3 mt-2">
@@ -153,6 +166,9 @@
               <img src="img/project/6.jpg" class="card-img-top" alt="pic6" />
               <div class="card-body">
                 <p class="card-text">Saya juga mempunyai skill wiring atau penataan kabel panel listrik dan PC.</p>
+              </div>
+              <div class="button">
+                <a href="https://seewatchid.github.io/" class="btn btn-light" target="_blank">Lihat Project</a>
               </div>
             </div>
           </div>
@@ -230,19 +246,14 @@
     <!--akhir footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to(".lead", { duration: 5, delay: 1.5, text: "Musician | Wiring | Vlogger | Editor | Garden Farmer | Programmer | PC Builder" });
       gsap.from(".jumbotron img", { duration: 3, opacity: 0, rotate: 360, x: 300, ease: "elastic.out(1, 0.3)" });
-      gsap.from(".navbar", { duration: 1.5, y: "-100%", delay: 1, opacity: 0, ease: "bounce" });
-      gsap.from(".display-4", { duration: 1, x: -800, opacity: 0, delay: 0.5, ease: "back" });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -500, opacity: 0, delay: 0.5, ease: "back" });
     </script>
 
     <script>
@@ -273,12 +284,12 @@
       });
     </script>
 
-    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <!-- <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script>
       VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
         speed: 400,
       });
-    </script>
+    </script> -->
   </body>
 </html>
