@@ -103,6 +103,7 @@ section {
   padding-top: 8rem;
 }
 
+
 /* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
@@ -129,20 +130,20 @@ section {
     font-size: 70%;
   }
   .card-body::before {
-    content: "Klik text ini untuk menampilkan detail";
+    content: "Klik text ini untuk melihat detail";
     top: 80%;
-    font-size: 25px;
-    left: 22%;
+    font-size: 15px;
+    left: 25%;
   }
   .card .button {
     width: 200px;
     bottom: 5px;
-    left: 80%;
+    left: 65%;
   }
 
   .card .card-body p {
     padding-bottom: 25px;
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .display-4 {
@@ -151,7 +152,7 @@ section {
 
   .lead {
     font-family: "Work Sans", sans-serif;
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 
