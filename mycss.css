@@ -165,12 +165,12 @@ h2 {
     font-size: 55%;
   }
     .card-body::before {
-    top: 75%;
-    font-size: 20px;
+    top: 70%;
+    font-size: 15px;
     left: 20%;
   }
   .card .button {
     bottom: 5px;
-    left: 73%;
+    left: 71%;
   }
 }
